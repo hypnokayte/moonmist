@@ -1,0 +1,28 @@
+button, .btn {
+  border-radius: $border-radius;
+  background: darken($blue, 10%);
+  color: $white;
+  padding: $padding-vertical $padding-horizontal;
+  display: inline-block;
+  line-height: $line-height-base;
+  text-decoration: none;
+  font-size: $btn-font-size;
+
+  &:hover, &:focus {background: darken($blue, 15%)}
+
+  &.btn-next {
+    background: darken($green, 30%);
+    &:hover, &:focus {background: darken($green, 35%)}
+  }
+  &.btn-secondary {
+    background: $gray-light; color: $black;
+    &:hover, &:focus {background: darken($gray-light, 10%)}
+  }
+  &.btn-info {
+    background: $lightpurple; color: $black;
+    &:hover, &:focus {background: darken($lightpurple, 10%)}
+  }
+
+  &-lg {font-size: $font-size-large;}
+  &-sm {font-size: $font-size-small;}
+}

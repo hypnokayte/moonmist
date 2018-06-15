@@ -1,0 +1,211 @@
+//  COLOURS //
+
+// Moonmist colours //
+$moonmist-blue: #7dd9fa;
+$moonmist-purple: #a291f8;
+$moonmist-yellow: #fef695;
+
+// Primary tones
+$blue:    darken($moonmist-blue, 30%);
+$purple:  darken($moonmist-purple, 30%);
+$yellow:  darken($moonmist-yellow, 30%);
+
+// Shades
+$darkblue:    darken($moonmist-blue, 20%);
+$darkpurple:  darken($moonmist-purple, 20%);
+$darkyellow:  darken($moonmist-yellow, 20%);
+
+// Tints
+$lightblue:   lighten($moonmist-blue, 10%);
+$lightpurple: lighten($moonmist-purple, 10%);
+$lightyellow: lighten($moonmist-yellow, 10%);
+
+// Predefined shades
+$gray:            #ccc; // 	//
+$gray-lighter:    lighten($gray, 25%); // 	//
+$gray-light:      lighten($gray, 15%);// 	//
+$gray-dark:       darken($gray, 15%); // 	//
+
+// Extended spectrum
+$green:   #44dd67;
+$red:     #dd4444;
+
+// Predefined shades
+$white:           #fff;
+$black:           #000;
+
+
+
+// Color assignments
+
+$body-bg:               #fff !default;
+$text-color:            #333 !default; // contrast ratio of at least 4.5:1 on a white background
+
+$link-color:            darken($blue, 3.14%);
+$link-hover-color:      lighten($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+$success:       $green !default;
+$info:          $blue !default;
+$warning:       $yellow !default;
+$error:         $red !default;
+
+$legend-color:                   $gray-dark !default;
+$legend-border-color:            #e5e5e5 !default;
+
+$text-muted:                  $gray-light !default;
+
+//  TYPOGRAPHY //
+
+$font-family-sans-serif:  'Lato', Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, 'Times New Roman', Times, serif !default;
+$font-family-cursive:     'Niconne', cursive;
+$font-family-icon:        'FontAwesome';
+$font-family-monospace:   Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+
+$font-size-em: 1em;
+$font-size-base:          16px !default;
+$font-size-large:         16px * 1.25 !default; // ~18px
+$font-size-small:         16px * .85 !default;  // ~12px
+
+$font-size-h1:            2em !default;         // ~48px
+$font-size-h2:            1.5em !default;       // ~48px
+$font-size-h3:            1.25em !default;      // ~32px
+$font-size-h4:            1em !default;         // ~24px
+$font-size-h5:            1em !default;         // ~16px
+$font-size-h6:            1em !default;         // ~14px
+
+
+// WHITESPACE //
+
+$line-height-base:        1.6875 !default; // 20/14
+$line-height-xl:      $line-height-base * 2;
+$line-height-sm:      $line-height-base * .5;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-em:          $line-height-base * 1em;
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor((16px * $line-height-base)) !default; // ~20px
+
+$padding-vertical:   10px;
+$padding-horizontal: 20px;
+
+$padding-vertical-sm:   $padding-vertical * .5;
+$padding-horizontal-sm: $padding-vertical * .5;
+
+$padding-vertical-xl:   $padding-vertical * 2;
+$padding-horizontal-xl: $padding-vertical * 2;
+
+// BASIC TABLE VALUES //
+
+$table-cell-padding: 10px;
+$table-cell-padding-sm: $table-cell-padding * .5;
+$table-cell-padding-xl:   $table-cell-padding * 2;
+$table-condensed-cell-padding:  5px !default;
+
+$table-bg:                      transparent !default;
+$table-bg-accent:               $gray-lighter !default;
+$table-bg-hover:                $gray-light !default;
+$table-bg-active:               $table-bg-hover !default;
+$table-border-color:            $gray !default;
+
+// BORDER RADIUS //
+$border-radius: 7px;
+$border-radius-sm: $border-radius * .5;
+$border-radius-xl: $border-radius * 2;
+
+
+//== Buttons
+$btn-font-size:         1.15em;
+$btn-font-weight:       400 !default;
+$btn-default-bg:        darken($blue, 15%) !default;
+$btn-default-color:     $white !default;
+$btn-default-border:    transparent !default;
+
+$btn-action-bg:         $green;
+$btn-action-color:      $white;
+
+$btn-search-bg:         darken($blue, 25%) !default;
+$btn-search-color:      $white;
+
+$btn-disabled-bg:       $green;
+$btn-disabled-color:    $white;
+
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-xs-min - 1) !default;
+$screen-sm-max:              ($screen-sm-min - 1) !default;
+$screen-md-max:              ($screen-md-min - 1) !default;
+$screen-lg-max:              ($screen-lg-min - 1) !default;
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         24px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-md-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             (730px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;

@@ -1,0 +1,20 @@
+---
+layout: fundamental
+title: Pattern Primer
+---
+
+
+<h1>UI Pattern Library</h1>
+
+
+{% for pattern in site.patterns %}
+<div class="pattern">
+  <div class="display">
+    {% if site.markdown-patterns %}{{ pattern.content | markdownify }}{% else %}{{ pattern.content }}{% endif %}
+  </div>
+  <div class="source">
+    <textarea rows="6" cols="30">{% if site.markdown-patterns %}{{ pattern.content | markdownify | xml_escape }}{% else %}{{ pattern.content | xml_escape }}{% endif %}</textarea>
+    <p><a href="{{ site.baseurl }}{{ pattern.url }}">{{ pattern.title }}</a></p>
+  </div>
+</div>
+{% endfor %}

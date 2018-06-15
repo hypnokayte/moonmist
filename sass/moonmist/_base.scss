@@ -1,0 +1,25 @@
+  header {
+// This is the sort of thing a mixin would be great for - you can use a mixin to create any sort of gradient with less code. This is a good article on how you could this: https://www.sitepoint.com/building-linear-gradient-mixin-sass/
+  background: #7dd9fa;
+  background: -moz-linear-gradient(-45deg, #7dd9fa 0%, #fef695 48%, #a291f8 100%);
+  background: -webkit-linear-gradient(-45deg, #7dd9fa 0%,#fef695 48%,#a291f8 100%);
+  background: linear-gradient(135deg, #7dd9fa 0%,#fef695 48%,#a291f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7dd9fa', endColorstr='#a291f8',GradientType=1 );
+  color: $white;
+  margin: 0 auto;
+  padding: 3em inherit;
+}
+
+main {
+  background: $white;
+  color: $text-color;
+  margin: 0 auto;
+  padding: 3em inherit;
+}
+
+footer {
+  background: $moonmist-blue;
+  color: $black;
+  margin: 0 auto;
+  padding: 3em inherit;
+}

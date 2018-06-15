@@ -1,0 +1,15 @@
+name: Jekyll Version of Pattern Primer
+markdown: kramdown
+# baseurl should be set to:
+# '': for local development (localhost:4000)
+# '': for root level domains (mycustomdomain.com)
+# '/projectname': for subdomains (user.github.io/projectname)
+baseurl: '/moonmist'
+permalink: :title.html
+
+collections:
+  patterns:
+    output: true
+    permalink: patterns/:path/
+
+markdown-patterns: false

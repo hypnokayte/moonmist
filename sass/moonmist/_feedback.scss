@@ -1,0 +1,9 @@
+.feedback {
+    margin: 1em auto;
+    background: $moonmist-yellow;
+    padding: 1em;
+    color: $black;
+
+    &.error {background: lighten($red, 25%);}
+    &.success {background: lighten($green, 25%);}
+}

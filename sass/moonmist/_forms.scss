@@ -1,0 +1,7 @@
+label, input {
+  display: block;
+
+  &.inline {display: inline-block; margin-right: 1em;}
+}
+
+textarea {width: 100%;}
